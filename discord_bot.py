@@ -330,7 +330,7 @@ async def dm(ctx, user_id=None, *, args=None):
     else:
         await ctx.channel.send("You didn't provide a user's id and/or a message.")
 
-@bot.command()
+@client.command()
 async def dm_all(ctx, *, args=None):
     if args != None:
         members = ctx.guild.members
